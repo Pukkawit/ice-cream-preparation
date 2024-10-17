@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Preparation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ice--cream--prepare">
+      <div class="form--section">
+        <h1>Ice Cream Preparation</h1>
+        <form id="orderForm">
+          <div class="double">
+            <div class="item-group">
+              <label for="fruitChoice">Preferred fruit </label>
+              <select
+                name="fruitChoice"
+                id="fruitChoice"
+                title="Choose a fruit"
+              >
+                <option value=""></option>
+              </select>
+              <div class="errorDiv"></div>
+            </div>
+            <div class="item-group">
+              <label for="liquidChoice">Preferred liquid </label>
+              <select
+                name="liquidChoice"
+                id="liquidChoice"
+                title="Choose a fruit"
+              >
+                <option value=""></option>
+              </select>
+              <div class="errorDiv"></div>
+            </div>
+          </div>
+          <div class="double">
+            <div class="item-group">
+              <label for="holderChoice">Preferred Holder </label>
+              <select
+                name="holderChoice"
+                id="holderChoice"
+                title="Choose a fruit"
+              >
+                <option value=""></option>
+              </select>
+              <div class="errorDiv"></div>
+            </div>
+            <div class="item-group">
+              <label for="toppingsChoice">Preferred Toppings </label>
+              <select
+                name="toppingsChoice"
+                id="toppingsChoice"
+                title="Choose a fruit"
+                on
+              >
+                <option value=""></option>
+              </select>
+              <div class="errorDiv"></div>
+            </div>
+          </div>
+          <button id="orderBtn" type="submit" title="submitRequest">
+            Order
+          </button>
+        </form>
+      </div>
+      <div class="response--section">
+        <h1>Preparation in progress...</h1>
+        <div id="response">
+          <div class="response--info"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
